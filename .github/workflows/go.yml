@@ -19,6 +19,6 @@ jobs:
         go-version: 1.17
 
     - name: Build
-      uses: nisargshah1410/goexample@v1.3
+      uses: nisargshah1410/goexample@v1.5
       with: 
         path: ./goexample.go
