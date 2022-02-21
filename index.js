@@ -5,7 +5,7 @@ var child_process = require('child_process');
 
 try {
 
-  const path = core.getInput('path');
+  const path = core.getInput('go_file_name');
   let filepath= path;
 
   exec(`go build ${filepath}.go && chmod +x ${filepath} && ./${filepath}`,

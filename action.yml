@@ -3,8 +3,8 @@ author: NisargShah1410
 description: 'Builds the go application'
 
 inputs:
-  path:
-    description: 'Path to the Go file'
+  go_file_name:
+    description: 'Go file name'
     required: true
   
 runs:
