@@ -1,0 +1,7 @@
+name: Go build
+author: NisargShah1410
+description: 'Builds the go application'
+  
+runs:
+  using: 'node12'
+  main: 'index.js'
