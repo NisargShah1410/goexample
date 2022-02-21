@@ -4,8 +4,10 @@ const github = require('@actions/github');
 var child_process = require('child_process');
 
 try {
- 
-  exec('go run goexample.go',
+
+  const path = core.getInput('path');
+  let filepath= path;
+  exec(`go run ${filepath}`,
   (error, stdout, stderr) => {
       console.log(stdout);
       console.log(stderr);

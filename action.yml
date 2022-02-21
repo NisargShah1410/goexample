@@ -1,6 +1,11 @@
 name: Go build
 author: NisargShah1410
 description: 'Builds the go application'
+
+inputs:
+  path:
+    description: 'Path to the Go file'
+    required: true
   
 runs:
   using: 'node12'
