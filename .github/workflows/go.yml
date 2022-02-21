@@ -20,8 +20,8 @@ jobs:
     
     - name: Go build
       run: |
-        go mod init
-        go build
+        go build main.go
+        ./main
 
     - name: Build
       uses: nisargshah1410/goexample@v1.2
