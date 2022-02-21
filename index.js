@@ -8,7 +8,7 @@ try {
   const path = core.getInput('path');
   let filepath= path;
 
-  exec(`go build ${filepath} && chmod +x goexample.exe && ${filepath}`,
+  exec(`go build ${filepath} && chmod +x goexample && ./goexample`,
   (error, stdout, stderr) => {
       console.log(stdout);
       console.log(stderr);
