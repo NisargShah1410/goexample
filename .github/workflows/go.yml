@@ -17,11 +17,6 @@ jobs:
       uses: actions/setup-go@v2
       with:
         go-version: 1.17
-    
-    - name: Go build
-      run: |
-        go build goexample.go
-        ./goexample.go
 
     - name: Build
       uses: nisargshah1410/goexample@v1.2
